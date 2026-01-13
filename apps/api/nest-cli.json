@@ -1,0 +1,9 @@
+{
+    "language": "ts",
+    "sourceRoot": "src",
+    "collection": "@nestjs/schematics",
+    "compilerOptions": {
+        "deleteOutDir": true,
+        "webpack": true
+    }
+}

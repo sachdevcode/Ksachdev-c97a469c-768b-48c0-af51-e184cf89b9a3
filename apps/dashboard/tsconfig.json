@@ -1,0 +1,35 @@
+{
+    "extends": "../../tsconfig.base.json",
+    "compilerOptions": {
+        "composite": false,
+        "outDir": "../../dist/out-tsc",
+        "target": "ES2022",
+        "useDefineForClassFields": false,
+        "module": "ES2022",
+        "lib": [
+            "ES2022",
+            "dom"
+        ],
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "baseUrl": ".",
+        "paths": {
+            "@rbac-task-system/data": [
+                "../../libs/data/src/index.ts"
+            ],
+            "@rbac-task-system/auth": [
+                "../../libs/auth/src/index.ts"
+            ]
+        }
+    },
+    "files": [],
+    "include": [],
+    "references": [
+        {
+            "path": "./tsconfig.app.json"
+        },
+        {
+            "path": "./tsconfig.spec.json"
+        }
+    ]
+}

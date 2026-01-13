@@ -1,0 +1,419 @@
+{
+  "version": "6.0",
+  "nxVersion": "22.3.3",
+  "pathMappings": {
+    "@rbac-task-system/data": [
+      "libs/data/src/index.ts"
+    ],
+    "@rbac-task-system/auth": [
+      "libs/auth/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/js/typescript",
+      "options": {
+        "typecheck": {
+          "targetName": "typecheck"
+        }
+      }
+    },
+    {
+      "name": "@nx/angular/plugin",
+      "options": {
+        "serveTargetName": "serve",
+        "buildTargetName": "build",
+        "testTargetName": "test"
+      }
+    },
+    {
+      "name": "@nx/nest/plugin",
+      "options": {
+        "serveTargetName": "serve",
+        "buildTargetName": "build",
+        "testTargetName": "test"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "libs/auth/package.json",
+        "hash": "5242331915876734651"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "444167810651647465"
+      },
+      {
+        "file": "libs/auth/src/guards.ts",
+        "hash": "4475473846002879177"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
+      },
+      {
+        "file": ".env.example",
+        "hash": "14524042894135088798"
+      },
+      {
+        "file": "nx.json",
+        "hash": "9498061478537111799"
+      },
+      {
+        "file": "tailwind.config.js",
+        "hash": "3445390969352836526"
+      },
+      {
+        "file": "libs/data/package.json",
+        "hash": "7770841161518027403"
+      },
+      {
+        "file": "QUICKSTART.md",
+        "hash": "9639453508973596093"
+      },
+      {
+        "file": "package.json",
+        "hash": "9534218789645408443"
+      },
+      {
+        "file": "libs/auth/src/jwt.strategy.ts",
+        "hash": "13408791609480291143"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "2071251894424170173"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "1379983966652230747"
+      },
+      {
+        "file": "libs/auth/src/decorators.ts",
+        "hash": "14642388525067677220"
+      },
+      {
+        "file": "README.md",
+        "hash": "1514828569257054943"
+      },
+      {
+        "file": "API_DOCS.md",
+        "hash": "9975980879085872967"
+      },
+      {
+        "file": "packages/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/auth/src/index.ts",
+        "hash": "17640523768352818459"
+      },
+      {
+        "file": "scripts/seed.ts",
+        "hash": "3798100621606346113"
+      },
+      {
+        "file": "postcss.config.js",
+        "hash": "156475621167309370"
+      },
+      {
+        "file": "libs/data/src/index.ts",
+        "hash": "3416512253590552083"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": "scripts/seed.js",
+        "hash": "15717194248653366737"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "16568134593512378696"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "11136431215757631561"
+      }
+    ],
+    "projectFileMap": {
+      "api": [
+        {
+          "file": "apps/api/jest.config.json",
+          "hash": "9776662175034108561"
+        },
+        {
+          "file": "apps/api/nest-cli.json",
+          "hash": "12286369481900852777"
+        },
+        {
+          "file": "apps/api/package-lock.json",
+          "hash": "10422298558305130363"
+        },
+        {
+          "file": "apps/api/package.json",
+          "hash": "4494729683813714745",
+          "deps": [
+            "npm:@nestjs/cli",
+            "npm:@nestjs/schematics",
+            "npm:@nestjs/testing",
+            "npm:@types/express",
+            "npm:@types/jest",
+            "npm:@types/node",
+            "npm:@types/passport-jwt",
+            "npm:@types/bcrypt",
+            "npm:jest",
+            "npm:ts-jest",
+            "npm:ts-node",
+            "npm:typescript",
+            "npm:@nestjs/common",
+            "npm:@nestjs/core",
+            "npm:@nestjs/platform-express",
+            "npm:@nestjs/typeorm",
+            "npm:@nestjs/jwt",
+            "npm:@nestjs/passport",
+            "npm:@nestjs/config",
+            "npm:typeorm",
+            "npm:sqlite3",
+            "npm:pg",
+            "npm:passport",
+            "npm:passport-jwt",
+            "npm:bcrypt",
+            "npm:class-validator",
+            "npm:class-transformer",
+            "npm:reflect-metadata",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/api/src/app.module.ts",
+          "hash": "15873706074368080675",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm",
+            "npm:@nestjs/config",
+            "npm:@nestjs/core",
+            "npm:@nestjs/passport"
+          ]
+        },
+        {
+          "file": "apps/api/src/auth/auth.controller.ts",
+          "hash": "9738757188933315103",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/auth/auth.module.ts",
+          "hash": "13645783160608863520",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm",
+            "npm:@nestjs/jwt",
+            "npm:@nestjs/passport"
+          ]
+        },
+        {
+          "file": "apps/api/src/auth/auth.service.ts",
+          "hash": "14790038209173067435",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm",
+            "npm:typeorm",
+            "npm:@nestjs/jwt",
+            "npm:bcrypt"
+          ]
+        },
+        {
+          "file": "apps/api/src/entities/index.ts",
+          "hash": "13056186701701372343",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "apps/api/src/main.ts",
+          "hash": "2626276279936123037",
+          "deps": [
+            "npm:@nestjs/core",
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/tasks/tasks.controller.ts",
+          "hash": "8731616622613402408",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/passport"
+          ]
+        },
+        {
+          "file": "apps/api/src/tasks/tasks.module.ts",
+          "hash": "2228181071630576024",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm"
+          ]
+        },
+        {
+          "file": "apps/api/src/tasks/tasks.service.ts",
+          "hash": "16554302902869218481",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm",
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "apps/api/tsconfig.json",
+          "hash": "304329869506427770"
+        }
+      ],
+      "dashboard": [
+        {
+          "file": "apps/dashboard/package-lock.json",
+          "hash": "1796278002847494970"
+        },
+        {
+          "file": "apps/dashboard/package.json",
+          "hash": "3053028813408790646",
+          "deps": [
+            "npm:typescript",
+            "npm:@angular/animations",
+            "npm:@angular/common",
+            "npm:@angular/compiler",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/platform-browser",
+            "npm:@angular/platform-browser-dynamic",
+            "npm:@angular/router",
+            "npm:@angular/cdk",
+            "npm:rxjs",
+            "npm:tslib",
+            "npm:zone.js"
+          ]
+        },
+        {
+          "file": "apps/dashboard/src/app/app.component.ts",
+          "hash": "7910335468415102568",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/dashboard/src/app/app.config.ts",
+          "hash": "308912697973055260",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/common",
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "apps/dashboard/src/app/app.routes.ts",
+          "hash": "2820764138627149697",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/dashboard/src/app/auth/auth.interceptor.ts",
+          "hash": "16084282494972918103",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/dashboard/src/app/auth/auth.service.ts",
+          "hash": "17496383518407455628",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/dashboard/src/app/auth/login.component.ts",
+          "hash": "12403866125168368921",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/dashboard/src/app/shared/theme.service.ts",
+          "hash": "17098683045201092053",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/dashboard/src/app/tasks/dashboard.component.ts",
+          "hash": "4678714826807007828",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:@angular/router",
+            "npm:@angular/cdk"
+          ]
+        },
+        {
+          "file": "apps/dashboard/src/app/tasks/task.service.ts",
+          "hash": "6638501464909984947",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/dashboard/src/index.html",
+          "hash": "12791303828926735599"
+        },
+        {
+          "file": "apps/dashboard/src/main.ts",
+          "hash": "4959746523201976030",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "apps/dashboard/src/styles.css",
+          "hash": "1368518437662236244"
+        },
+        {
+          "file": "apps/dashboard/src/test-setup.ts",
+          "hash": "16930199646574415309",
+          "deps": [
+            "npm:zone.js",
+            "npm:@angular/core",
+            "npm:@angular/platform-browser-dynamic"
+          ]
+        },
+        {
+          "file": "apps/dashboard/tsconfig.app.json",
+          "hash": "381276703329705276"
+        },
+        {
+          "file": "apps/dashboard/tsconfig.json",
+          "hash": "17085152717762418093"
+        },
+        {
+          "file": "apps/dashboard/tsconfig.spec.json",
+          "hash": "6627527283883867095"
+        }
+      ]
+    }
+  },
+  "externalNodesHash": "15026661608234946811"
+}
