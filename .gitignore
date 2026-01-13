@@ -4,11 +4,11 @@ dist
 build
 
 # Database
-*.sqlite
-*.db
+# *.sqlite
+# *.db
 
 # Environment
-.env
+# .env
 .env.local
 
 # IDE
