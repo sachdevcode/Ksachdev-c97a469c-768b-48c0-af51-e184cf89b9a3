@@ -9,5 +9,9 @@
         "src/**/*.ts",
         "src/**/*.d.ts",
         "../../libs/**/*.ts"
+    ],
+    "exclude": [
+        "src/**/*.spec.ts",
+        "../../libs/**/*.spec.ts"
     ]
 }
